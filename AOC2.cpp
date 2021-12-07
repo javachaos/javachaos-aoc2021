@@ -12,7 +12,7 @@ int main() {
     string direction;
     string magnitude;
 
-    std::ifstream infile("input.txt");
+    std::ifstream infile("./data/input_aoc2.txt");
     while (infile >> direction >> magnitude) {
         switch(direction[0]) {
             case 'd':

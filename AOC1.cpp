@@ -82,7 +82,7 @@ int main() {
     std::cout << "count1: " << count1 << std::endl;
 
     int count2 = 0;
-    for (int i = 0; i < v.size(); i++) {
+    for (unsigned int i = 0; i < v.size(); i++) {
         if (i + 3 < v.size()) {
             int sum2 = v[i] + v[i+1] + v[i+2];
             int sum = v[i+1] + v[i+2] + v[i+3];

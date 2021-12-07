@@ -1,0 +1,104 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "distribution",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "heap",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "aoc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aoc-distribution-c3ceb88aebddcb45e12d.json",
+					"name" : "aoc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "aoc1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aoc1-distribution-5da61f3e511533d25c10.json",
+					"name" : "aoc1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "aoc2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aoc2-distribution-69c36d24618e2084a272.json",
+					"name" : "aoc2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "aoc3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aoc3-distribution-9015ac49f3a985686ae7.json",
+					"name" : "aoc3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "aoc6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aoc6-distribution-f90c9c3221419882583e.json",
+					"name" : "aoc6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "aoc7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aoc7-distribution-276cbfe62b51e97f1ec9.json",
+					"name" : "aoc7",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/fred/AOC/build",
+		"source" : "/home/fred/AOC"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

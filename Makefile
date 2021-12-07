@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/fred/AOC
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,71 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named aoc7
+
+# Build rule for target.
+aoc7: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aoc7
+.PHONY : aoc7
+
+# fast build rule for target.
+aoc7/fast:
+	$(MAKE) -f CMakeFiles/aoc7.dir/build.make CMakeFiles/aoc7.dir/build
+.PHONY : aoc7/fast
+
+#=============================================================================
+# Target rules for targets named aoc6
+
+# Build rule for target.
+aoc6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aoc6
+.PHONY : aoc6
+
+# fast build rule for target.
+aoc6/fast:
+	$(MAKE) -f CMakeFiles/aoc6.dir/build.make CMakeFiles/aoc6.dir/build
+.PHONY : aoc6/fast
+
+#=============================================================================
+# Target rules for targets named aoc2
+
+# Build rule for target.
+aoc2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aoc2
+.PHONY : aoc2
+
+# fast build rule for target.
+aoc2/fast:
+	$(MAKE) -f CMakeFiles/aoc2.dir/build.make CMakeFiles/aoc2.dir/build
+.PHONY : aoc2/fast
+
+#=============================================================================
+# Target rules for targets named aoc3
+
+# Build rule for target.
+aoc3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aoc3
+.PHONY : aoc3
+
+# fast build rule for target.
+aoc3/fast:
+	$(MAKE) -f CMakeFiles/aoc3.dir/build.make CMakeFiles/aoc3.dir/build
+.PHONY : aoc3/fast
+
+#=============================================================================
+# Target rules for targets named aoc1
+
+# Build rule for target.
+aoc1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aoc1
+.PHONY : aoc1
+
+# fast build rule for target.
+aoc1/fast:
+	$(MAKE) -f CMakeFiles/aoc1.dir/build.make CMakeFiles/aoc1.dir/build
+.PHONY : aoc1/fast
 
 #=============================================================================
 # Target rules for targets named aoc
@@ -150,18 +215,173 @@ AOC.cpp.s:
 	$(MAKE) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/AOC.cpp.s
 .PHONY : AOC.cpp.s
 
+AOC1.o: AOC1.cpp.o
+
+.PHONY : AOC1.o
+
+# target to build an object file
+AOC1.cpp.o:
+	$(MAKE) -f CMakeFiles/aoc1.dir/build.make CMakeFiles/aoc1.dir/AOC1.cpp.o
+.PHONY : AOC1.cpp.o
+
+AOC1.i: AOC1.cpp.i
+
+.PHONY : AOC1.i
+
+# target to preprocess a source file
+AOC1.cpp.i:
+	$(MAKE) -f CMakeFiles/aoc1.dir/build.make CMakeFiles/aoc1.dir/AOC1.cpp.i
+.PHONY : AOC1.cpp.i
+
+AOC1.s: AOC1.cpp.s
+
+.PHONY : AOC1.s
+
+# target to generate assembly for a file
+AOC1.cpp.s:
+	$(MAKE) -f CMakeFiles/aoc1.dir/build.make CMakeFiles/aoc1.dir/AOC1.cpp.s
+.PHONY : AOC1.cpp.s
+
+AOC2.o: AOC2.cpp.o
+
+.PHONY : AOC2.o
+
+# target to build an object file
+AOC2.cpp.o:
+	$(MAKE) -f CMakeFiles/aoc2.dir/build.make CMakeFiles/aoc2.dir/AOC2.cpp.o
+.PHONY : AOC2.cpp.o
+
+AOC2.i: AOC2.cpp.i
+
+.PHONY : AOC2.i
+
+# target to preprocess a source file
+AOC2.cpp.i:
+	$(MAKE) -f CMakeFiles/aoc2.dir/build.make CMakeFiles/aoc2.dir/AOC2.cpp.i
+.PHONY : AOC2.cpp.i
+
+AOC2.s: AOC2.cpp.s
+
+.PHONY : AOC2.s
+
+# target to generate assembly for a file
+AOC2.cpp.s:
+	$(MAKE) -f CMakeFiles/aoc2.dir/build.make CMakeFiles/aoc2.dir/AOC2.cpp.s
+.PHONY : AOC2.cpp.s
+
+AOC3.o: AOC3.cpp.o
+
+.PHONY : AOC3.o
+
+# target to build an object file
+AOC3.cpp.o:
+	$(MAKE) -f CMakeFiles/aoc3.dir/build.make CMakeFiles/aoc3.dir/AOC3.cpp.o
+.PHONY : AOC3.cpp.o
+
+AOC3.i: AOC3.cpp.i
+
+.PHONY : AOC3.i
+
+# target to preprocess a source file
+AOC3.cpp.i:
+	$(MAKE) -f CMakeFiles/aoc3.dir/build.make CMakeFiles/aoc3.dir/AOC3.cpp.i
+.PHONY : AOC3.cpp.i
+
+AOC3.s: AOC3.cpp.s
+
+.PHONY : AOC3.s
+
+# target to generate assembly for a file
+AOC3.cpp.s:
+	$(MAKE) -f CMakeFiles/aoc3.dir/build.make CMakeFiles/aoc3.dir/AOC3.cpp.s
+.PHONY : AOC3.cpp.s
+
+AOC6.o: AOC6.cpp.o
+
+.PHONY : AOC6.o
+
+# target to build an object file
+AOC6.cpp.o:
+	$(MAKE) -f CMakeFiles/aoc6.dir/build.make CMakeFiles/aoc6.dir/AOC6.cpp.o
+.PHONY : AOC6.cpp.o
+
+AOC6.i: AOC6.cpp.i
+
+.PHONY : AOC6.i
+
+# target to preprocess a source file
+AOC6.cpp.i:
+	$(MAKE) -f CMakeFiles/aoc6.dir/build.make CMakeFiles/aoc6.dir/AOC6.cpp.i
+.PHONY : AOC6.cpp.i
+
+AOC6.s: AOC6.cpp.s
+
+.PHONY : AOC6.s
+
+# target to generate assembly for a file
+AOC6.cpp.s:
+	$(MAKE) -f CMakeFiles/aoc6.dir/build.make CMakeFiles/aoc6.dir/AOC6.cpp.s
+.PHONY : AOC6.cpp.s
+
+AOC7.o: AOC7.cpp.o
+
+.PHONY : AOC7.o
+
+# target to build an object file
+AOC7.cpp.o:
+	$(MAKE) -f CMakeFiles/aoc7.dir/build.make CMakeFiles/aoc7.dir/AOC7.cpp.o
+.PHONY : AOC7.cpp.o
+
+AOC7.i: AOC7.cpp.i
+
+.PHONY : AOC7.i
+
+# target to preprocess a source file
+AOC7.cpp.i:
+	$(MAKE) -f CMakeFiles/aoc7.dir/build.make CMakeFiles/aoc7.dir/AOC7.cpp.i
+.PHONY : AOC7.cpp.i
+
+AOC7.s: AOC7.cpp.s
+
+.PHONY : AOC7.s
+
+# target to generate assembly for a file
+AOC7.cpp.s:
+	$(MAKE) -f CMakeFiles/aoc7.dir/build.make CMakeFiles/aoc7.dir/AOC7.cpp.s
+.PHONY : AOC7.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... aoc7"
+	@echo "... aoc6"
+	@echo "... aoc2"
+	@echo "... rebuild_cache"
+	@echo "... aoc3"
+	@echo "... aoc1"
 	@echo "... aoc"
 	@echo "... AOC.o"
 	@echo "... AOC.i"
 	@echo "... AOC.s"
+	@echo "... AOC1.o"
+	@echo "... AOC1.i"
+	@echo "... AOC1.s"
+	@echo "... AOC2.o"
+	@echo "... AOC2.i"
+	@echo "... AOC2.s"
+	@echo "... AOC3.o"
+	@echo "... AOC3.i"
+	@echo "... AOC3.s"
+	@echo "... AOC6.o"
+	@echo "... AOC6.i"
+	@echo "... AOC6.s"
+	@echo "... AOC7.o"
+	@echo "... AOC7.i"
+	@echo "... AOC7.s"
 .PHONY : help
 
 

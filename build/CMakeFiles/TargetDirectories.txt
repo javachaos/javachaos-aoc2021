@@ -1,0 +1,8 @@
+/home/fred/AOC/build/CMakeFiles/edit_cache.dir
+/home/fred/AOC/build/CMakeFiles/aoc7.dir
+/home/fred/AOC/build/CMakeFiles/aoc6.dir
+/home/fred/AOC/build/CMakeFiles/aoc2.dir
+/home/fred/AOC/build/CMakeFiles/rebuild_cache.dir
+/home/fred/AOC/build/CMakeFiles/aoc3.dir
+/home/fred/AOC/build/CMakeFiles/aoc1.dir
+/home/fred/AOC/build/CMakeFiles/aoc.dir

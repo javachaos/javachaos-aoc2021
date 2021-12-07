@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    ifstream file("input.txt");
+    ifstream file("./data/input_aoc3_2.txt");
     string line;
     vector<string> input;
     while (getline(file, line)) {
