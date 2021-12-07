@@ -6,3 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/home/fred/AOC/AOC7.cpp
+vector
+-
+iostream
+-
+string
+-
+numeric
+-
+chrono
+-
+math.h
+-
+
