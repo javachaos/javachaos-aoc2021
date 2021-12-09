@@ -1,8 +1,11 @@
 /home/fred/AOC/CMakeFiles/edit_cache.dir
+/home/fred/AOC/CMakeFiles/aoc8.dir
 /home/fred/AOC/CMakeFiles/aoc7.dir
 /home/fred/AOC/CMakeFiles/aoc6.dir
 /home/fred/AOC/CMakeFiles/aoc2.dir
 /home/fred/AOC/CMakeFiles/rebuild_cache.dir
 /home/fred/AOC/CMakeFiles/aoc3.dir
 /home/fred/AOC/CMakeFiles/aoc1.dir
+/home/fred/AOC/CMakeFiles/aoc5.dir
 /home/fred/AOC/CMakeFiles/aoc.dir
+/home/fred/AOC/CMakeFiles/binmat.dir

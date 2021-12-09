@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fred/AOC/BinaryMatrix.c
+BinaryMatrix.h
+/home/fred/AOC/BinaryMatrix.h
+
+/home/fred/AOC/BinaryMatrix.h
+stdio.h
+-
+stdlib.h
+-
+stdint.h
+-
+

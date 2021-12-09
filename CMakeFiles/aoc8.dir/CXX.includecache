@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fred/AOC/AOC8.cpp
+BinaryMatrix.h
+/home/fred/AOC/BinaryMatrix.h
+vector
+-
+map
+-
+set
+-
+iostream
+-
+fstream
+-
+string
+-
+numeric
+-
+chrono
+-
+math.h
+-
+boost/algorithm/string.hpp
+-
+
+/home/fred/AOC/BinaryMatrix.h
+stdio.h
+-
+stdlib.h
+-
+stdint.h
+-
+

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbinmat.a  CMakeFiles/binmat.dir/BinaryMatrix.c.o
+/usr/bin/ranlib libbinmat.a

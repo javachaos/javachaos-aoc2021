@@ -30,6 +30,18 @@
 			"value" : "/usr/include"
 		},
 		{
+			"name" : "Boost_TIMER_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "STRING",
+			"value" : "/usr/lib/x86_64-linux-gnu/libboost_timer.so.1.71.0"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -1210,6 +1222,30 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "CppUTest_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for CppUTest."
+				}
+			],
+			"type" : "PATH",
+			"value" : "CppUTest_DIR-NOTFOUND"
+		},
+		{
+			"name" : "Eigen3_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Eigen3."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/cmake/eigen3"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Boost",
 			"properties" : 
 			[
@@ -1219,7 +1255,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake][c ][v1.71.0(1.71.0)]"
+			"value" : "[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake][cfound components: timer ][v1.71.0(1.71.0)]"
 		},
 		{
 			"name" : "GMP_DIR",
@@ -1258,6 +1294,34 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/libgmp.so"
 		},
 		{
+			"name" : "boost_algorithm_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_algorithm."
+				}
+			],
+			"type" : "PATH",
+			"value" : "boost_algorithm_DIR-NOTFOUND"
+		},
+		{
+			"name" : "boost_chrono_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_chrono."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_chrono-1.71.0"
+		},
+		{
 			"name" : "boost_headers_DIR",
 			"properties" : 
 			[
@@ -1272,6 +1336,22 @@
 			],
 			"type" : "PATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0"
+		},
+		{
+			"name" : "boost_timer_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_timer."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_timer-1.71.0"
 		},
 		{
 			"name" : "heap_BINARY_DIR",

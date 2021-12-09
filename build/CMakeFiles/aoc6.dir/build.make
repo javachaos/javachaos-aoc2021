@@ -79,6 +79,7 @@ aoc6_EXTERNAL_OBJECTS =
 
 bin/aoc6: CMakeFiles/aoc6.dir/AOC6.cpp.o
 bin/aoc6: CMakeFiles/aoc6.dir/build.make
+bin/aoc6: libbinmat.a
 bin/aoc6: /usr/lib/x86_64-linux-gnu/libgmp.so
 bin/aoc6: CMakeFiles/aoc6.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fred/AOC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/aoc6"

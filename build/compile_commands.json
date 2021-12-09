@@ -1,32 +1,47 @@
 [
 {
   "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O3 -lgmpxx -lgmp -fopenmp   -Wall -O3 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc7.dir/AOC7.cpp.o -c /home/fred/AOC/AOC7.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc8.dir/AOC8.cpp.o -c /home/fred/AOC/AOC8.cpp",
+  "file": "/home/fred/AOC/AOC8.cpp"
+},
+{
+  "directory": "/home/fred/AOC/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc7.dir/AOC7.cpp.o -c /home/fred/AOC/AOC7.cpp",
   "file": "/home/fred/AOC/AOC7.cpp"
 },
 {
   "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -I\"/home/fred/AOC/build /usr/include/x86_64-linux-gnu\"   -Wall -O3 -lgmpxx -lgmp -fopenmp   -Wall -O3 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc6.dir/AOC6.cpp.o -c /home/fred/AOC/AOC6.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I\"/home/fred/AOC/build /usr/include/x86_64-linux-gnu\"   -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc6.dir/AOC6.cpp.o -c /home/fred/AOC/AOC6.cpp",
   "file": "/home/fred/AOC/AOC6.cpp"
 },
 {
   "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O3 -lgmpxx -lgmp -fopenmp   -Wall -O3 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc2.dir/AOC2.cpp.o -c /home/fred/AOC/AOC2.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc2.dir/AOC2.cpp.o -c /home/fred/AOC/AOC2.cpp",
   "file": "/home/fred/AOC/AOC2.cpp"
 },
 {
   "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O3 -lgmpxx -lgmp -fopenmp   -Wall -O3 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc3.dir/AOC3.cpp.o -c /home/fred/AOC/AOC3.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc3.dir/AOC3.cpp.o -c /home/fred/AOC/AOC3.cpp",
   "file": "/home/fred/AOC/AOC3.cpp"
 },
 {
   "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O3 -lgmpxx -lgmp -fopenmp   -Wall -O3 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc1.dir/AOC1.cpp.o -c /home/fred/AOC/AOC1.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc1.dir/AOC1.cpp.o -c /home/fred/AOC/AOC1.cpp",
   "file": "/home/fred/AOC/AOC1.cpp"
 },
 {
   "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O3 -lgmpxx -lgmp -fopenmp   -Wall -O3 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc.dir/AOC.cpp.o -c /home/fred/AOC/AOC.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc5.dir/AOC5.cpp.o -c /home/fred/AOC/AOC5.cpp",
+  "file": "/home/fred/AOC/AOC5.cpp"
+},
+{
+  "directory": "/home/fred/AOC/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc.dir/AOC.cpp.o -c /home/fred/AOC/AOC.cpp",
   "file": "/home/fred/AOC/AOC.cpp"
+},
+{
+  "directory": "/home/fred/AOC/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-9     -Wall -O0 -lgmpxx -lgmp -fopenmp -o CMakeFiles/binmat.dir/BinaryMatrix.c.o   -c /home/fred/AOC/BinaryMatrix.c",
+  "file": "/home/fred/AOC/BinaryMatrix.c"
 }
 ]

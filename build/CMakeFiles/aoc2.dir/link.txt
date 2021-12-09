@@ -1,1 +1,1 @@
-/bin/x86_64-linux-gnu-g++-9   -Wall -O3 -lgmpxx -lgmp -fopenmp    CMakeFiles/aoc2.dir/AOC2.cpp.o  -o bin/aoc2 
+/bin/x86_64-linux-gnu-g++-9   -Wall -O0 -lgmpxx -lgmp -fopenmp    CMakeFiles/aoc2.dir/AOC2.cpp.o  -o bin/aoc2 

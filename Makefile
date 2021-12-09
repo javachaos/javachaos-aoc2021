@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named aoc8
+
+# Build rule for target.
+aoc8: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aoc8
+.PHONY : aoc8
+
+# fast build rule for target.
+aoc8/fast:
+	$(MAKE) -f CMakeFiles/aoc8.dir/build.make CMakeFiles/aoc8.dir/build
+.PHONY : aoc8/fast
+
+#=============================================================================
 # Target rules for targets named aoc7
 
 # Build rule for target.
@@ -176,6 +189,19 @@ aoc1/fast:
 .PHONY : aoc1/fast
 
 #=============================================================================
+# Target rules for targets named aoc5
+
+# Build rule for target.
+aoc5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aoc5
+.PHONY : aoc5
+
+# fast build rule for target.
+aoc5/fast:
+	$(MAKE) -f CMakeFiles/aoc5.dir/build.make CMakeFiles/aoc5.dir/build
+.PHONY : aoc5/fast
+
+#=============================================================================
 # Target rules for targets named aoc
 
 # Build rule for target.
@@ -187,6 +213,19 @@ aoc: cmake_check_build_system
 aoc/fast:
 	$(MAKE) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/build
 .PHONY : aoc/fast
+
+#=============================================================================
+# Target rules for targets named binmat
+
+# Build rule for target.
+binmat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 binmat
+.PHONY : binmat
+
+# fast build rule for target.
+binmat/fast:
+	$(MAKE) -f CMakeFiles/binmat.dir/build.make CMakeFiles/binmat.dir/build
+.PHONY : binmat/fast
 
 AOC.o: AOC.cpp.o
 
@@ -296,6 +335,33 @@ AOC3.cpp.s:
 	$(MAKE) -f CMakeFiles/aoc3.dir/build.make CMakeFiles/aoc3.dir/AOC3.cpp.s
 .PHONY : AOC3.cpp.s
 
+AOC5.o: AOC5.cpp.o
+
+.PHONY : AOC5.o
+
+# target to build an object file
+AOC5.cpp.o:
+	$(MAKE) -f CMakeFiles/aoc5.dir/build.make CMakeFiles/aoc5.dir/AOC5.cpp.o
+.PHONY : AOC5.cpp.o
+
+AOC5.i: AOC5.cpp.i
+
+.PHONY : AOC5.i
+
+# target to preprocess a source file
+AOC5.cpp.i:
+	$(MAKE) -f CMakeFiles/aoc5.dir/build.make CMakeFiles/aoc5.dir/AOC5.cpp.i
+.PHONY : AOC5.cpp.i
+
+AOC5.s: AOC5.cpp.s
+
+.PHONY : AOC5.s
+
+# target to generate assembly for a file
+AOC5.cpp.s:
+	$(MAKE) -f CMakeFiles/aoc5.dir/build.make CMakeFiles/aoc5.dir/AOC5.cpp.s
+.PHONY : AOC5.cpp.s
+
 AOC6.o: AOC6.cpp.o
 
 .PHONY : AOC6.o
@@ -350,6 +416,60 @@ AOC7.cpp.s:
 	$(MAKE) -f CMakeFiles/aoc7.dir/build.make CMakeFiles/aoc7.dir/AOC7.cpp.s
 .PHONY : AOC7.cpp.s
 
+AOC8.o: AOC8.cpp.o
+
+.PHONY : AOC8.o
+
+# target to build an object file
+AOC8.cpp.o:
+	$(MAKE) -f CMakeFiles/aoc8.dir/build.make CMakeFiles/aoc8.dir/AOC8.cpp.o
+.PHONY : AOC8.cpp.o
+
+AOC8.i: AOC8.cpp.i
+
+.PHONY : AOC8.i
+
+# target to preprocess a source file
+AOC8.cpp.i:
+	$(MAKE) -f CMakeFiles/aoc8.dir/build.make CMakeFiles/aoc8.dir/AOC8.cpp.i
+.PHONY : AOC8.cpp.i
+
+AOC8.s: AOC8.cpp.s
+
+.PHONY : AOC8.s
+
+# target to generate assembly for a file
+AOC8.cpp.s:
+	$(MAKE) -f CMakeFiles/aoc8.dir/build.make CMakeFiles/aoc8.dir/AOC8.cpp.s
+.PHONY : AOC8.cpp.s
+
+BinaryMatrix.o: BinaryMatrix.c.o
+
+.PHONY : BinaryMatrix.o
+
+# target to build an object file
+BinaryMatrix.c.o:
+	$(MAKE) -f CMakeFiles/binmat.dir/build.make CMakeFiles/binmat.dir/BinaryMatrix.c.o
+.PHONY : BinaryMatrix.c.o
+
+BinaryMatrix.i: BinaryMatrix.c.i
+
+.PHONY : BinaryMatrix.i
+
+# target to preprocess a source file
+BinaryMatrix.c.i:
+	$(MAKE) -f CMakeFiles/binmat.dir/build.make CMakeFiles/binmat.dir/BinaryMatrix.c.i
+.PHONY : BinaryMatrix.c.i
+
+BinaryMatrix.s: BinaryMatrix.c.s
+
+.PHONY : BinaryMatrix.s
+
+# target to generate assembly for a file
+BinaryMatrix.c.s:
+	$(MAKE) -f CMakeFiles/binmat.dir/build.make CMakeFiles/binmat.dir/BinaryMatrix.c.s
+.PHONY : BinaryMatrix.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -357,13 +477,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... aoc8"
 	@echo "... aoc7"
 	@echo "... aoc6"
 	@echo "... aoc2"
 	@echo "... rebuild_cache"
 	@echo "... aoc3"
 	@echo "... aoc1"
+	@echo "... aoc5"
 	@echo "... aoc"
+	@echo "... binmat"
 	@echo "... AOC.o"
 	@echo "... AOC.i"
 	@echo "... AOC.s"
@@ -376,12 +499,21 @@ help:
 	@echo "... AOC3.o"
 	@echo "... AOC3.i"
 	@echo "... AOC3.s"
+	@echo "... AOC5.o"
+	@echo "... AOC5.i"
+	@echo "... AOC5.s"
 	@echo "... AOC6.o"
 	@echo "... AOC6.i"
 	@echo "... AOC6.s"
 	@echo "... AOC7.o"
 	@echo "... AOC7.i"
 	@echo "... AOC7.s"
+	@echo "... AOC8.o"
+	@echo "... AOC8.i"
+	@echo "... AOC8.s"
+	@echo "... BinaryMatrix.o"
+	@echo "... BinaryMatrix.i"
+	@echo "... BinaryMatrix.s"
 .PHONY : help
 
 

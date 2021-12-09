@@ -24,11 +24,11 @@ mpz_class submarine(vector<int> input, int num_steps) {
         fish[7] = fish[8];
         fish[8] = tmp;
     }
-    mpz_class total;
+    tmp = 0;
     for (unsigned long int k = 0; k < 9; k++) {
-        total += fish[k];
+        tmp += fish[k];
     }
-    return total;
+    return tmp;
 }
 
 int main(int argc, char *argv[]) {

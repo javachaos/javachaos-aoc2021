@@ -53,12 +53,15 @@ CMAKE_BINARY_DIR = /home/fred/AOC/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/aoc8.dir/all
 all: CMakeFiles/aoc7.dir/all
 all: CMakeFiles/aoc6.dir/all
 all: CMakeFiles/aoc2.dir/all
 all: CMakeFiles/aoc3.dir/all
 all: CMakeFiles/aoc1.dir/all
+all: CMakeFiles/aoc5.dir/all
 all: CMakeFiles/aoc.dir/all
+all: CMakeFiles/binmat.dir/all
 
 .PHONY : all
 
@@ -68,14 +71,44 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/aoc8.dir/clean
 clean: CMakeFiles/aoc7.dir/clean
 clean: CMakeFiles/aoc6.dir/clean
 clean: CMakeFiles/aoc2.dir/clean
 clean: CMakeFiles/aoc3.dir/clean
 clean: CMakeFiles/aoc1.dir/clean
+clean: CMakeFiles/aoc5.dir/clean
 clean: CMakeFiles/aoc.dir/clean
+clean: CMakeFiles/binmat.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/aoc8.dir
+
+# All Build rule for target.
+CMakeFiles/aoc8.dir/all:
+	$(MAKE) -f CMakeFiles/aoc8.dir/build.make CMakeFiles/aoc8.dir/depend
+	$(MAKE) -f CMakeFiles/aoc8.dir/build.make CMakeFiles/aoc8.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/AOC/build/CMakeFiles --progress-num=15,16 "Built target aoc8"
+.PHONY : CMakeFiles/aoc8.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/aoc8.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fred/AOC/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/aoc8.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fred/AOC/build/CMakeFiles 0
+.PHONY : CMakeFiles/aoc8.dir/rule
+
+# Convenience name for target.
+aoc8: CMakeFiles/aoc8.dir/rule
+
+.PHONY : aoc8
+
+# clean rule for target.
+CMakeFiles/aoc8.dir/clean:
+	$(MAKE) -f CMakeFiles/aoc8.dir/build.make CMakeFiles/aoc8.dir/clean
+.PHONY : CMakeFiles/aoc8.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/aoc7.dir
@@ -84,7 +117,7 @@ clean: CMakeFiles/aoc.dir/clean
 CMakeFiles/aoc7.dir/all:
 	$(MAKE) -f CMakeFiles/aoc7.dir/build.make CMakeFiles/aoc7.dir/depend
 	$(MAKE) -f CMakeFiles/aoc7.dir/build.make CMakeFiles/aoc7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/AOC/build/CMakeFiles --progress-num=11,12 "Built target aoc7"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/AOC/build/CMakeFiles --progress-num=13,14 "Built target aoc7"
 .PHONY : CMakeFiles/aoc7.dir/all
 
 # Build rule for subdir invocation for target.
@@ -108,15 +141,15 @@ CMakeFiles/aoc7.dir/clean:
 # Target rules for target CMakeFiles/aoc6.dir
 
 # All Build rule for target.
-CMakeFiles/aoc6.dir/all:
+CMakeFiles/aoc6.dir/all: CMakeFiles/binmat.dir/all
 	$(MAKE) -f CMakeFiles/aoc6.dir/build.make CMakeFiles/aoc6.dir/depend
 	$(MAKE) -f CMakeFiles/aoc6.dir/build.make CMakeFiles/aoc6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/AOC/build/CMakeFiles --progress-num=9,10 "Built target aoc6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/AOC/build/CMakeFiles --progress-num=11,12 "Built target aoc6"
 .PHONY : CMakeFiles/aoc6.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/aoc6.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fred/AOC/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fred/AOC/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/aoc6.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fred/AOC/build/CMakeFiles 0
 .PHONY : CMakeFiles/aoc6.dir/rule
@@ -213,6 +246,33 @@ CMakeFiles/aoc1.dir/clean:
 .PHONY : CMakeFiles/aoc1.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/aoc5.dir
+
+# All Build rule for target.
+CMakeFiles/aoc5.dir/all:
+	$(MAKE) -f CMakeFiles/aoc5.dir/build.make CMakeFiles/aoc5.dir/depend
+	$(MAKE) -f CMakeFiles/aoc5.dir/build.make CMakeFiles/aoc5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/AOC/build/CMakeFiles --progress-num=9,10 "Built target aoc5"
+.PHONY : CMakeFiles/aoc5.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/aoc5.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fred/AOC/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/aoc5.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fred/AOC/build/CMakeFiles 0
+.PHONY : CMakeFiles/aoc5.dir/rule
+
+# Convenience name for target.
+aoc5: CMakeFiles/aoc5.dir/rule
+
+.PHONY : aoc5
+
+# clean rule for target.
+CMakeFiles/aoc5.dir/clean:
+	$(MAKE) -f CMakeFiles/aoc5.dir/build.make CMakeFiles/aoc5.dir/clean
+.PHONY : CMakeFiles/aoc5.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/aoc.dir
 
 # All Build rule for target.
@@ -238,6 +298,33 @@ aoc: CMakeFiles/aoc.dir/rule
 CMakeFiles/aoc.dir/clean:
 	$(MAKE) -f CMakeFiles/aoc.dir/build.make CMakeFiles/aoc.dir/clean
 .PHONY : CMakeFiles/aoc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/binmat.dir
+
+# All Build rule for target.
+CMakeFiles/binmat.dir/all:
+	$(MAKE) -f CMakeFiles/binmat.dir/build.make CMakeFiles/binmat.dir/depend
+	$(MAKE) -f CMakeFiles/binmat.dir/build.make CMakeFiles/binmat.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/AOC/build/CMakeFiles --progress-num=17,18 "Built target binmat"
+.PHONY : CMakeFiles/binmat.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/binmat.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fred/AOC/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/binmat.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fred/AOC/build/CMakeFiles 0
+.PHONY : CMakeFiles/binmat.dir/rule
+
+# Convenience name for target.
+binmat: CMakeFiles/binmat.dir/rule
+
+.PHONY : binmat
+
+# clean rule for target.
+CMakeFiles/binmat.dir/clean:
+	$(MAKE) -f CMakeFiles/binmat.dir/build.make CMakeFiles/binmat.dir/clean
+.PHONY : CMakeFiles/binmat.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

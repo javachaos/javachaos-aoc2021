@@ -1,1 +1,1 @@
-/usr/bin/c++   -Wall -O3 -lgmpxx -lgmp -fopenmp    CMakeFiles/aoc1.dir/AOC1.cpp.o  -o bin/aoc1 
+/usr/bin/c++   -Wall -O0 -lgmpxx -lgmp -fopenmp    CMakeFiles/aoc1.dir/AOC1.cpp.o  -o bin/aoc1 

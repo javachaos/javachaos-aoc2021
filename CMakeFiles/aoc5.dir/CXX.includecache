@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fred/AOC/AOC5.cpp
+vector
+-
+set
+-
+iostream
+-
+fstream
+-
+string
+-
+numeric
+-
+chrono
+-
+math.h
+-
+
