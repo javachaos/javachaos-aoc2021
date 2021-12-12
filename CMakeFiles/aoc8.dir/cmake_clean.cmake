@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aoc8.dir/AOC8.cpp.o"
+  "CMakeFiles/aoc8.dir/AOC8.cpp.o.d"
   "bin/aoc8"
   "bin/aoc8.pdb"
 )

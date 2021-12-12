@@ -4,6 +4,7 @@
 #include <numeric>
 #include <chrono>
 #include <math.h>
+#include <algorithm>
 using namespace std;
 
 float average(std::vector<float> const& v){
@@ -40,7 +41,7 @@ int main() {
     cout << "Solving..." << endl;
     unsigned long int min_cost = numeric_limits<int>::max();
     int n = 0;
-    for (unsigned int x = average(v) - 1; x < average(v) + 1; x++) {//very fast
+    for (unsigned int x = average(v) - 1; x < average(v) + 1; x++) {//very fast 263 microsecond runtime.
         unsigned long int total_cost1 = 0;
         for (unsigned int y = 0; y < v.size(); y++) {
             n = abs(x - v[y]);

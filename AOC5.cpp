@@ -58,8 +58,8 @@ Point intersect(Line l0, Line l1) {
 }
 
 void print_matrix(vector<vector<int>> matrix) {
-    for (int i = 0; i < matrix.size(); i++) {
-        for (int j = 0; j < matrix[i].size(); j++) {
+    for (unsigned int i = 0; i < matrix.size(); i++) {
+        for (unsigned int j = 0; j < matrix[i].size(); j++) {
             cout << matrix[i][j] << " ";
         }
         cout << endl;
@@ -69,8 +69,8 @@ void print_matrix(vector<vector<int>> matrix) {
 
 int main() {
     vector<vector<int>> grid(64, vector<int>(64));
-    for (int i = 0; i < grid.size(); i++) {
-        for (int j = 0; j < grid[i].size(); j++) {
+    for (unsigned int i = 0; i < grid.size(); i++) {
+        for (unsigned int j = 0; j < grid[i].size(); j++) {
             grid[i][j] = 0;
         }
     }
@@ -94,7 +94,8 @@ int main() {
     // Part 1
     for (auto line0 : lines) {
         for (auto line1 : lines) {
-            //TODO Sleep
+            cout << line1.toString() << endl; //TODO replace this line with code. 
+            cout << line0.toString() << endl; //TODO replace this line with code. 
         }
     }
     cout << "----------------------------------------------------------------------------------------------------" << endl;

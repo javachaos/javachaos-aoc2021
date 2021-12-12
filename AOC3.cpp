@@ -15,7 +15,6 @@ int main() {
     string gamma = "";
     string epsilon = "";
     int j = 0;
-    #pragma GCC unroll 0
     for (int i = 0; i < size; i++) {
         infile.open("./data/input_aoc3.txt");
         while (std::getline(infile, line)) {

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/binmat.dir/BinaryMatrix.c.o"
+  "CMakeFiles/binmat.dir/BinaryMatrix.c.o.d"
   "libbinmat.a"
   "libbinmat.pdb"
 )

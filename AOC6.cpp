@@ -5,30 +5,24 @@
 using namespace std;
 
 mpz_class submarine(vector<int> input, int num_steps) {
-    mpz_class fish[9];
-
-    for (unsigned long int i = 0; i < input.size(); i++) {
-        fish[input[i]]++;
+    vector<mpz_class> fish(9);
+    // Could make this faster by adding more vectors of fish (widening the bandwidth so to speak) the size of this vector is a bottleneck.
+    // could make a matrix of fish vectors each vector offset by 1 to the right.
+    // This solution works quite well for small numbers of steps (n < 10000000), but could be faster using a matrix.
+    fish.reserve(9);
+    for (auto n : input) {
+        fish[n]++;
     }
-    
-    mpz_class tmp;
+    mpz_class tmp = 0;
     for (int g = 0; g < num_steps; g++) {
-        tmp = fish[0];
-        fish[0] = fish[1];
-        fish[1] = fish[2];
-        fish[2] = fish[3];
-        fish[3] = fish[4];
-        fish[4] = fish[5];
-        fish[5] = fish[6];
-        fish[6] = tmp + fish[7];
-        fish[7] = fish[8];
-        fish[8] = tmp;
+        fish.at(7) += fish.front();
+        rotate(fish.begin(), fish.begin() + 1, fish.end());
     }
-    tmp = 0;
-    for (unsigned long int k = 0; k < 9; k++) {
-        tmp += fish[k];
+    mpz_class t = 0;
+    for (auto x : fish) {
+        t += x;
     }
-    return tmp;
+    return t;
 }
 
 int main(int argc, char *argv[]) {
@@ -38,10 +32,7 @@ int main(int argc, char *argv[]) {
     1,2,1,1,1,2,1,4,3,1,1,1,4,1,1,1,1,1,2,2,1,1,5,1,1,3,1,2,5,5,1,4,1,1,1,1,1,2,1,1,1,1,4,5,1,1,1,1,1,1,1,1,1,
     3,4,4,1,1,4,1,3,4,1,5,4,2,5,1,2,1,1,1,1,1,1,4,3,2,1,1,3,2,5,2,5,5,1,3,1,2,1,1,1,1,1,1,1,1,1,3,1,1,1,3,1,4,
     1,4,2,1,3,4,1,1,1,2,3,1,1,1,4,1,2,5,1,2,1,5,1,1,2,1,2,1,1,1,1,4,3,4,1,5,5,4,1,1,5,2,1,3 };
-    //vector<unsigned long int> v = {3,4,3,1,2};
-    //cout << "Pick a number of days to simulate: ";
     unsigned long int n = atoi(argv[1]);
-    //cin >> n;
     cout << "Num days: ";
     cout << n << " " << endl << submarine(v, n) << endl;
     cout << "Done." << endl;
