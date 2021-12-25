@@ -1,47 +1,61 @@
 [
 {
-  "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc8.dir/AOC8.cpp.o -c /home/fred/AOC/AOC8.cpp",
-  "file": "/home/fred/AOC/AOC8.cpp"
+  "directory": "/home/fred/Development/javachaos-aoc2021/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc8.dir/AOC8.cpp.o -c /home/fred/Development/javachaos-aoc2021/AOC8.cpp",
+  "file": "/home/fred/Development/javachaos-aoc2021/AOC8.cpp"
 },
+
 {
-  "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc7.dir/AOC7.cpp.o -c /home/fred/AOC/AOC7.cpp",
-  "file": "/home/fred/AOC/AOC7.cpp"
+  "directory": "/home/fred/Development/javachaos-aoc2021/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc7.dir/AOC7.cpp.o -c /home/fred/Development/javachaos-aoc2021/AOC7.cpp",
+  "file": "/home/fred/Development/javachaos-aoc2021/AOC7.cpp"
 },
+
 {
-  "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -I\"/home/fred/AOC/build /usr/include/x86_64-linux-gnu\"   -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc6.dir/AOC6.cpp.o -c /home/fred/AOC/AOC6.cpp",
-  "file": "/home/fred/AOC/AOC6.cpp"
+  "directory": "/home/fred/Development/javachaos-aoc2021/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc3_2.dir/AOC3_2.cpp.o -c /home/fred/Development/javachaos-aoc2021/AOC3_2.cpp",
+  "file": "/home/fred/Development/javachaos-aoc2021/AOC3_2.cpp"
 },
+
 {
-  "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc2.dir/AOC2.cpp.o -c /home/fred/AOC/AOC2.cpp",
-  "file": "/home/fred/AOC/AOC2.cpp"
+  "directory": "/home/fred/Development/javachaos-aoc2021/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I\"../build /usr/include/x86_64-linux-gnu\"   -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc6.dir/AOC6.cpp.o -c /home/fred/Development/javachaos-aoc2021/AOC6.cpp",
+  "file": "/home/fred/Development/javachaos-aoc2021/AOC6.cpp"
 },
+
 {
-  "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc3.dir/AOC3.cpp.o -c /home/fred/AOC/AOC3.cpp",
-  "file": "/home/fred/AOC/AOC3.cpp"
+  "directory": "/home/fred/Development/javachaos-aoc2021/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc2.dir/AOC2.cpp.o -c /home/fred/Development/javachaos-aoc2021/AOC2.cpp",
+  "file": "/home/fred/Development/javachaos-aoc2021/AOC2.cpp"
 },
+
 {
-  "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc1.dir/AOC1.cpp.o -c /home/fred/AOC/AOC1.cpp",
-  "file": "/home/fred/AOC/AOC1.cpp"
+  "directory": "/home/fred/Development/javachaos-aoc2021/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc3.dir/AOC3.cpp.o -c /home/fred/Development/javachaos-aoc2021/AOC3.cpp",
+  "file": "/home/fred/Development/javachaos-aoc2021/AOC3.cpp"
 },
+
 {
-  "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc5.dir/AOC5.cpp.o -c /home/fred/AOC/AOC5.cpp",
-  "file": "/home/fred/AOC/AOC5.cpp"
+  "directory": "/home/fred/Development/javachaos-aoc2021/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc1.dir/AOC1.cpp.o -c /home/fred/Development/javachaos-aoc2021/AOC1.cpp",
+  "file": "/home/fred/Development/javachaos-aoc2021/AOC1.cpp"
 },
+
 {
-  "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc.dir/AOC.cpp.o -c /home/fred/AOC/AOC.cpp",
-  "file": "/home/fred/AOC/AOC.cpp"
+  "directory": "/home/fred/Development/javachaos-aoc2021/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc5.dir/AOC5.cpp.o -c /home/fred/Development/javachaos-aoc2021/AOC5.cpp",
+  "file": "/home/fred/Development/javachaos-aoc2021/AOC5.cpp"
 },
+
 {
-  "directory": "/home/fred/AOC/build",
-  "command": "/bin/x86_64-linux-gnu-gcc-9     -Wall -O0 -lgmpxx -lgmp -fopenmp -o CMakeFiles/binmat.dir/BinaryMatrix.c.o   -c /home/fred/AOC/BinaryMatrix.c",
-  "file": "/home/fred/AOC/BinaryMatrix.c"
+  "directory": "/home/fred/Development/javachaos-aoc2021/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc.dir/AOC.cpp.o -c /home/fred/Development/javachaos-aoc2021/AOC.cpp",
+  "file": "/home/fred/Development/javachaos-aoc2021/AOC.cpp"
+},
+
+{
+  "directory": "/home/fred/Development/javachaos-aoc2021/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-9     -Wall -O0 -lgmpxx -lgmp -fopenmp -o CMakeFiles/binmat.dir/BinaryMatrix.c.o   -c /home/fred/Development/javachaos-aoc2021/BinaryMatrix.c",
+  "file": "/home/fred/Development/javachaos-aoc2021/BinaryMatrix.c"
 }
 ]

@@ -1,4 +1,4 @@
-# Install script for directory: /home/fred/AOC
+# Install script for directory: /home/fred/Development/javachaos-aoc2021
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/fred/AOC/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/fred/Development/javachaos-aoc2021/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

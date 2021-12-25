@@ -95,7 +95,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/fred/AOC/build"
+			"value" : "/home/fred/Development/javachaos-aoc2021/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -132,22 +132,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "3"
-		},
-		{
-			"name" : "CMAKE_COLOR_MAKEFILE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Enable/Disable color output during build."
-				}
-			],
-			"type" : "BOOL",
-			"value" : "ON"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -587,7 +571,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Unix Makefiles"
+			"value" : "Ninja"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -635,7 +619,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/fred/AOC"
+			"value" : "/home/fred/Development/javachaos-aoc2021"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -687,11 +671,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a program."
+					"value" : "Program used to build from build.ninja files."
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/make"
+			"value" : "/usr/bin/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1222,18 +1206,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "CppUTest_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for CppUTest."
-				}
-			],
-			"type" : "PATH",
-			"value" : "CppUTest_DIR-NOTFOUND"
-		},
-		{
 			"name" : "Eigen3_DIR",
 			"properties" : 
 			[
@@ -1258,18 +1230,6 @@
 			"value" : "[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake][cfound components: timer ][v1.71.0(1.71.0)]"
 		},
 		{
-			"name" : "GMP_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for GMP."
-				}
-			],
-			"type" : "PATH",
-			"value" : "GMP_DIR-NOTFOUND"
-		},
-		{
 			"name" : "GMP_INCLUDE_DIR",
 			"properties" : 
 			[
@@ -1292,18 +1252,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/libgmp.so"
-		},
-		{
-			"name" : "boost_algorithm_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for boost_algorithm."
-				}
-			],
-			"type" : "PATH",
-			"value" : "boost_algorithm_DIR-NOTFOUND"
 		},
 		{
 			"name" : "boost_chrono_DIR",
@@ -1363,7 +1311,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/fred/AOC/build"
+			"value" : "/home/fred/Development/javachaos-aoc2021/build"
 		},
 		{
 			"name" : "heap_SOURCE_DIR",
@@ -1375,7 +1323,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/fred/AOC"
+			"value" : "/home/fred/Development/javachaos-aoc2021"
 		}
 	],
 	"kind" : "cache",

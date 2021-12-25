@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/fred/AOC/BinaryMatrix.c
+/home/fred/Development/javachaos-aoc2021/BinaryMatrix.c
 BinaryMatrix.h
-/home/fred/AOC/BinaryMatrix.h
+/home/fred/Development/javachaos-aoc2021/BinaryMatrix.h
 
-/home/fred/AOC/BinaryMatrix.h
+/home/fred/Development/javachaos-aoc2021/BinaryMatrix.h
 stdio.h
 -
 stdlib.h

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/fred/AOC/AOC7.cpp
+/home/fred/Development/javachaos-aoc2021/AOC7.cpp
 vector
 -
 iostream
@@ -18,5 +18,7 @@ numeric
 chrono
 -
 math.h
+-
+algorithm
 -
 

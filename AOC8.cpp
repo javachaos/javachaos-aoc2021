@@ -8,9 +8,26 @@
 #include <string>
 #include <numeric>
 #include <math.h>
+#include <bitset>
 #include <chrono>
 #include <boost/algorithm/string.hpp>
 using namespace std;
+
+class conststr {
+    const char* p;
+    std::size_t sz;
+public:
+    template<std::size_t N>
+    constexpr conststr(const char(&a)[N]): p(a), sz(N - 1) {}
+ 
+    // constexpr functions signal errors by throwing exceptions
+    // in C++11, they must do so from the conditional operator ?:
+    constexpr char operator[](std::size_t n) const
+    {
+        return n < sz ? p[n] : throw std::out_of_range("");
+    }
+    constexpr std::size_t size() const { return sz; }
+};
 
 int part_one(const vector<string> &codes) {
     int count = 0;
@@ -68,159 +85,103 @@ int ctoidx(const char &s) {
         case 'g':
             return 6;
     }
-    return -1;
+    return 7;
 }
 
+bitset<7> encode(string &s) {
+    // Default constructor. 
+    // Constructs a bitset with all bits set to zero.
+    bitset<7> encoded;
+    for (char c : s) {//Set the relevant bits
+        encoded.set(ctoidx(c));
+    }
+    return encoded;
+}
+
+bitset<7> encode_known(const vector<string> &codes, const uint d) {
+    bitset<7> output;
+    for (string s : codes) {
+        if (s.length() == d) {
+            output = encode(s);
+        }
+    }
+    return output;
+}
+
+// This function/method is called once for each sample (line in the data input file)
+//
+// To solve this task with min. space and time use a bitset to represent ABCDEFG -> (1,1,1,1,1,1,1,1),
+// e.g AB -> (1,1,0,0,0,0,0), for this problem order does not matter.
+// using a bitset gives us the ability to use bitwise functions on the data while using minimal space
+// symmetric difference and difference will be represented using p^q(p xor q), p&q~(p and not q) respectively
+// for each set of observations (the first 10 sequences of characters) we substract what we don't know
+// from what we know in the same order to form a unique pattern we can use to correctly identify what we don't know.
+// To accomplish this we will emplore a bitset datastructure to hold the bits of each digit. (represented as described above)
+// 
+// 1. First we calculate the mappings of what we already know, namely values which have string lengths of:
+//   2(1 display), 4(4 display), 6 (8 display) and 3 (7 display)
+// 2. From this we then compute a difference vector for each unknown mapped to each known.
+// 3. Using this new information compute a correct mapping then calculate the four digit code for this sample.
 unsigned int part_two(const vector<string> &codes, const vector<string> &four_digits) {
-    unsigned int count = 0;
-    std::map<int, string> map = {
-        {0, ""},
-        {1, ""},
-        {2, ""},
-        {3, ""},
-        {4, ""},
-        {5, ""},
-        {6, ""},
-        {7, ""},
-        {8, ""},
-        {9, ""}
-    };
-    std::map<int, string> five_set = {
-        {2, ""},
-        {3, ""},
-        {5, ""}
-    };
-    std::map<int, string> six_set = {
-        {0, ""},
-        {6, ""},
-        {9, ""}
-    };
-    std::unordered_map<int, int> delta_map;
-    vector<int> index_list_5 = {2, 3, 5};
-    vector<int> index_list_6 = {0, 6, 9};
-    vector<string> all_codes;
-    all_codes.insert(all_codes.end(), codes.begin(), codes.end());
-    all_codes.insert(all_codes.end(), four_digits.begin(), four_digits.end());
-    for (auto c : all_codes) {
-        switch(c.length()) {
-            case 2:
-                delta_map[ctoidx('c')] = ctoidx(c[0]);
-                delta_map[ctoidx('f')] = ctoidx(c[1]);
-                break;
-            case 3:
-                delta_map[ctoidx('a')] = ctoidx(c[0]);
-                delta_map[ctoidx('c')] = ctoidx(c[1]);
-                delta_map[ctoidx('f')] = ctoidx(c[2]);
-                break;
-            case 4:
-                delta_map[ctoidx('b')] = ctoidx(c[0]);
-                delta_map[ctoidx('d')] = ctoidx(c[1]);
-                delta_map[ctoidx('c')] = ctoidx(c[2]);
-                delta_map[ctoidx('f')] = ctoidx(c[3]);
-                break;
-            case 7:
-                delta_map[ctoidx('a')] = ctoidx(c[0]);
-                delta_map[ctoidx('b')] = ctoidx(c[1]);
-                delta_map[ctoidx('c')] = ctoidx(c[2]);
-                delta_map[ctoidx('d')] = ctoidx(c[3]);
-                delta_map[ctoidx('e')] = ctoidx(c[4]);
-                delta_map[ctoidx('f')] = ctoidx(c[5]);
-                delta_map[ctoidx('g')] = ctoidx(c[6]);
-                break;
-            
-        }
-    }
-    set<string> s;
-    set<string> t;
-    for (auto d : all_codes) {
-        switch(d.length()) {
-            case 2:
-                map[1] = d;
-                break;
-            case 3:
-                map[7] = d;
-                break;
-            case 4:
-                map[4] = d;
-                break;
-            case 5:
-                s.insert(d);
-                if (s.size() == 3) {
-                    vector<string> five_temp(t.begin(), t.end());
-                    five_set[index_list_5[0]] = five_temp[0];
-                    five_set[index_list_5[1]] = five_temp[1];
-                    five_set[index_list_5[2]] = five_temp[2];
-                }
-                break;
-            case 6:
-                t.insert(d);
-                if (t.size() == 3) {
-                    vector<string> six_temp(t.begin(), t.end());
-                    six_set[index_list_6[0]] = six_temp[0];
-                    six_set[index_list_6[1]] = six_temp[1];
-                    six_set[index_list_6[2]] = six_temp[2];
-                }
-                break;
-            case 7:
-                map[8] = d;
-                break;
-            
-        }
-    }
 
-    while (map.size() < 10) {
-        vector<string> five_temp(t.begin(), t.end());
-        vector<string> six_temp(t.begin(), t.end());
-        for (auto pair : map) {
-            switch (pair.second.length()) {
-                case 5:
-                    map[index_list_5[0]] = five_temp[0];
-                    map[index_list_5[1]] = five_temp[1];
-                    map[index_list_5[2]] = five_temp[2];
-                    next_permutation(index_list_5.begin(), index_list_5.end());
-                    break;
-                case 6:
-                    map[index_list_6[0]] = six_temp[0];
-                    map[index_list_6[1]] = six_temp[1];
-                    map[index_list_6[2]] = six_temp[2];
-                    next_permutation(index_list_6.begin(), index_list_6.end());
-                    break;
-            }
-        }
-        for (auto m : map) {
-            int valid = 1;
-            for (auto c : m.second) {
-                if (ctoidx(c) > 0 && (delta_map[ctoidx(c)] != ctoidx(c))) {
-                    valid = 0;
-                    map.erase(m.first);
-                    break;
-                }
-            }
-            if (!valid) {
-                break;
-            }
-        }//TODO fiddle with this
+    //knowns
+    const std::bitset<7> one =   encode_known(codes, 2);
+    const std::bitset<7> four =  encode_known(codes, 4);
+    const std::bitset<7> seven = encode_known(codes, 3);
+    const std::bitset<7> eight = encode_known(codes, 7);
 
-    }
-    cout << "map size: " << map.size() << endl;
-    cout << "Map: " << endl;
-    for (auto m : map) {
-        cout << m.first << ": " << *m.second.begin() << endl;
-    }
-    if (map.size() != 10) {
-        cout << "Error: map size is not 10" << endl;
-        return 0;
-    }
-    int i = 3;
-    for (auto s : four_digits) {
-        for (auto m : map) {
-            if (s.compare(m.second) == 0) {
-                    count += m.first * pow(10, i);
-            }
+    //unknowns
+    std::bitset<7> zero;
+    std::bitset<7> two;
+    std::bitset<7> three;
+    std::bitset<7> five;
+    std::bitset<7> six;
+    std::bitset<7> nine;
+
+    for (string str : codes) {
+        bitset<7> x = encode(str);
+        int first =  (x & ~one  ).count();
+        int second = (x & ~four ).count();
+        int third =  (x & ~seven).count();
+        int forth =  (x ^ eight).count();
+        if (first == 3 && second == 2 && third == 2 && forth == 2) {
+            three = x;
         }
-        i--;
+        if (first == 4 && second == 3 && third == 3 && forth == 1) {
+            zero = x;
+        }
+        if (first == 4 && second == 3 && third == 3 && forth == 2) {
+            two = x;
+        }
+        if (first == 4 && second == 2 && third == 3 && forth == 2) {
+            five = x;
+        }
+        if (first == 5 && second == 3 && third == 4 && forth == 1) {
+            six = x;
+        }
+        if (first == 4 && second == 2 && third == 3 && forth == 1) {
+            nine = x;
+        }
     }
-    return count;
+    
+    //At this point using each bitset we have a correct mapping for each of the output digits
+    //so all that is left is to use the mapping to calculate the output.
+    string output = "";
+    for (string d : four_digits) {
+        bitset<7> x = encode(d);
+        if (x == zero)  { output.push_back('0'); }
+        if (x == one)   { output.push_back('1'); }
+        if (x == two)   { output.push_back('2'); }
+        if (x == three) { output.push_back('3'); }
+        if (x == four)  { output.push_back('4'); }
+        if (x == five)  { output.push_back('5'); }
+        if (x == six)   { output.push_back('6'); }
+        if (x == seven) { output.push_back('7'); }
+        if (x == eight) { output.push_back('8'); }
+        if (x == nine)  { output.push_back('9'); }
+    }
+    
+    return stoi(output);
 }
 
 int main() {
@@ -234,7 +195,7 @@ int main() {
     int part1_count = 0;
     unsigned long int part2_count = 0;
     ifstream file("./data/input_aoc8.txt");
-    while (getline(file, line)) {        
+    while (getline(file, line)) {
         string first = line.substr(0, line.find(delimiter));
         string second = line.substr(line.find(delimiter) + delimiter.length());
         string delim = " ";

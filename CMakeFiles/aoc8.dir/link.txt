@@ -1,1 +1,1 @@
-/usr/bin/c++  -Wall -O0 -lgmpxx -lgmp -fopenmp CMakeFiles/aoc8.dir/AOC8.cpp.o -o bin/aoc8 
+/usr/bin/c++   -Wall -O0 -lgmpxx -lgmp -fopenmp    CMakeFiles/aoc8.dir/AOC8.cpp.o  -o bin/aoc8 

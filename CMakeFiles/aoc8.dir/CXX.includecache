@@ -6,12 +6,14 @@
 
 #IncludeRegexTransform: 
 
-/home/fred/AOC/AOC8.cpp
+/home/fred/Development/javachaos-aoc2021/AOC8.cpp
 BinaryMatrix.h
-/home/fred/AOC/BinaryMatrix.h
+/home/fred/Development/javachaos-aoc2021/BinaryMatrix.h
 vector
 -
 map
+-
+stack
 -
 set
 -
@@ -23,14 +25,16 @@ string
 -
 numeric
 -
-chrono
--
 math.h
+-
+bitset
+-
+chrono
 -
 boost/algorithm/string.hpp
 -
 
-/home/fred/AOC/BinaryMatrix.h
+/home/fred/Development/javachaos-aoc2021/BinaryMatrix.h
 stdio.h
 -
 stdlib.h
