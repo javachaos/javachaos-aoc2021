@@ -140,10 +140,10 @@ unsigned int part_two(const vector<string> &codes, const vector<string> &four_di
 
     for (string str : codes) {
         bitset<7> x = encode(str);
-        int first =  (x & ~one  ).count();
-        int second = (x & ~four ).count();
-        int third =  (x & ~seven).count();
-        int forth =  (x ^ eight).count();
+        uint8_t first =  (x & ~one  ).count();
+        uint8_t second = (x & ~four ).count();
+        uint8_t third =  (x & ~seven).count();
+        uint8_t forth =  (x ^ eight).count();
 
         if (first == 3 // the first bitwise set difference between x and one has 3 one bits set.
         && second == 2 // the second bitwise set difference between x and four has 2 one bits set.
@@ -212,7 +212,6 @@ unsigned int part_two(const vector<string> &codes, const vector<string> &four_di
 }
 
 int main() {
-    auto start = std::chrono::high_resolution_clock::now();
     std::string delimiter = " | ";
     vector<string> codes;
     codes.reserve(10);
@@ -222,6 +221,7 @@ int main() {
     int part1_count = 0;
     unsigned long int part2_count = 0;
     ifstream file("./data/input_aoc8.txt");
+    auto start = std::chrono::high_resolution_clock::now();
     while (getline(file, line)) {
         string first = line.substr(0, line.find(delimiter));
         string second = line.substr(line.find(delimiter) + delimiter.length());
@@ -231,12 +231,14 @@ int main() {
         part1_count += part_one(four_digits);
         part2_count += part_two(codes, four_digits);
     }
+    auto stop = std::chrono::high_resolution_clock::now();
     file.close();
-    
+    // This code is 10x slower than my rust implementation 
+    // (same algorithm, main difference is in rust I could use a switch statement to avoid branching).
+    // switch statements in C++ are too big of a hassle (constexpr ect), rust makes non-branching code 10x easier.
     cout << "Part 1 -> Count: " << part1_count << endl;
     cout << "Part 2 -> Count: " << part2_count << endl;
 
-    auto stop = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
     cout << "Time: " << duration.count() << " microseconds" << endl;
 }
