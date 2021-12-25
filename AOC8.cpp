@@ -144,22 +144,49 @@ unsigned int part_two(const vector<string> &codes, const vector<string> &four_di
         int second = (x & ~four ).count();
         int third =  (x & ~seven).count();
         int forth =  (x ^ eight).count();
-        if (first == 3 && second == 2 && third == 2 && forth == 2) {
+
+        if (first == 3 // the first bitwise set difference between x and one has 3 one bits set.
+        && second == 2 // the second bitwise set difference between x and four has 2 one bits set.
+        &&  third == 2 // the third bitwise set difference between x and seven has 2 one bits set.
+        &&  forth == 2) { // finally the set symmetric difference between x and eight has 2 bits set.
+            //this corresponds to the digit 3.
+            //to discover these mappings first start with the number you have, in this case 3
+            //then perform the operations with the number 3 as x in this case.
             three = x;
         }
-        if (first == 4 && second == 3 && third == 3 && forth == 1) {
+        
+        if (first == 4
+        && second == 3
+        &&  third == 3
+        &&  forth == 1) {
             zero = x;
         }
-        if (first == 4 && second == 3 && third == 3 && forth == 2) {
+
+        if (first == 4
+        && second == 3
+        &&  third == 3
+        &&  forth == 2) {
             two = x;
         }
-        if (first == 4 && second == 2 && third == 3 && forth == 2) {
+
+        if (first == 4
+        && second == 2
+        &&  third == 3
+        &&  forth == 2) {
             five = x;
         }
-        if (first == 5 && second == 3 && third == 4 && forth == 1) {
+
+        if (first == 5
+        && second == 3
+        &&  third == 4
+        &&  forth == 1) {
             six = x;
         }
-        if (first == 4 && second == 2 && third == 3 && forth == 1) {
+
+        if (first == 4
+        && second == 2
+        &&  third == 3
+        &&  forth == 1) {
             nine = x;
         }
     }
