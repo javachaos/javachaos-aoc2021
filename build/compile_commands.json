@@ -13,6 +13,12 @@
 
 {
   "directory": "/home/fred/Development/javachaos-aoc2021/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-9     -Wall -O0 -lgmpxx -lgmp -fopenmp -o CMakeFiles/aoc10.dir/AOC10.c.o   -c /home/fred/Development/javachaos-aoc2021/AOC10.c",
+  "file": "/home/fred/Development/javachaos-aoc2021/AOC10.c"
+},
+
+{
+  "directory": "/home/fred/Development/javachaos-aoc2021/build",
   "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -O0 -lgmpxx -lgmp -fopenmp   -Wall -O0 -lgmpxx -lgmp -fopenmp -std=gnu++2a -o CMakeFiles/aoc3_2.dir/AOC3_2.cpp.o -c /home/fred/Development/javachaos-aoc2021/AOC3_2.cpp",
   "file": "/home/fred/Development/javachaos-aoc2021/AOC3_2.cpp"
 },

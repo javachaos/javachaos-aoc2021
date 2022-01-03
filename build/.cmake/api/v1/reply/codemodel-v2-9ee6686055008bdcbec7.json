@@ -23,7 +23,8 @@
 						6,
 						7,
 						8,
-						9
+						9,
+						10
 					]
 				}
 			],
@@ -47,7 +48,8 @@
 						6,
 						7,
 						8,
-						9
+						9,
+						10
 					]
 				}
 			],
@@ -65,6 +67,13 @@
 					"id" : "aoc1::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-aoc1-distribution-941bfee32382ec6d064f.json",
 					"name" : "aoc1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "aoc10::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aoc10-distribution-c49cf28d5726605b3390.json",
+					"name" : "aoc10",
 					"projectIndex" : 0
 				},
 				{
@@ -98,7 +107,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "aoc6::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-aoc6-distribution-645c2400b03effa5f684.json",
+					"jsonFile" : "target-aoc6-distribution-a024c8c1b103a9428c6a.json",
 					"name" : "aoc6",
 					"projectIndex" : 0
 				},

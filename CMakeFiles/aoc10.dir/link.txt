@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/aoc10.dir/AOC10.c.o  -o bin/aoc10 

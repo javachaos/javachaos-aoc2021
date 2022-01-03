@@ -137,6 +137,19 @@ aoc7/fast:
 .PHONY : aoc7/fast
 
 #=============================================================================
+# Target rules for targets named aoc10
+
+# Build rule for target.
+aoc10: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aoc10
+.PHONY : aoc10
+
+# fast build rule for target.
+aoc10/fast:
+	$(MAKE) -f CMakeFiles/aoc10.dir/build.make CMakeFiles/aoc10.dir/build
+.PHONY : aoc10/fast
+
+#=============================================================================
 # Target rules for targets named aoc3_2
 
 # Build rule for target.
@@ -293,6 +306,33 @@ AOC1.s: AOC1.cpp.s
 AOC1.cpp.s:
 	$(MAKE) -f CMakeFiles/aoc1.dir/build.make CMakeFiles/aoc1.dir/AOC1.cpp.s
 .PHONY : AOC1.cpp.s
+
+AOC10.o: AOC10.c.o
+
+.PHONY : AOC10.o
+
+# target to build an object file
+AOC10.c.o:
+	$(MAKE) -f CMakeFiles/aoc10.dir/build.make CMakeFiles/aoc10.dir/AOC10.c.o
+.PHONY : AOC10.c.o
+
+AOC10.i: AOC10.c.i
+
+.PHONY : AOC10.i
+
+# target to preprocess a source file
+AOC10.c.i:
+	$(MAKE) -f CMakeFiles/aoc10.dir/build.make CMakeFiles/aoc10.dir/AOC10.c.i
+.PHONY : AOC10.c.i
+
+AOC10.s: AOC10.c.s
+
+.PHONY : AOC10.s
+
+# target to generate assembly for a file
+AOC10.c.s:
+	$(MAKE) -f CMakeFiles/aoc10.dir/build.make CMakeFiles/aoc10.dir/AOC10.c.s
+.PHONY : AOC10.c.s
 
 AOC2.o: AOC2.cpp.o
 
@@ -519,6 +559,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... aoc8"
 	@echo "... aoc7"
+	@echo "... aoc10"
 	@echo "... aoc3_2"
 	@echo "... aoc6"
 	@echo "... aoc2"
@@ -534,6 +575,9 @@ help:
 	@echo "... AOC1.o"
 	@echo "... AOC1.i"
 	@echo "... AOC1.s"
+	@echo "... AOC10.o"
+	@echo "... AOC10.i"
+	@echo "... AOC10.s"
 	@echo "... AOC2.o"
 	@echo "... AOC2.i"
 	@echo "... AOC2.s"

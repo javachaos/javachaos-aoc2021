@@ -66,6 +66,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/aoc8.dir/DependInfo.cmake"
   "CMakeFiles/aoc7.dir/DependInfo.cmake"
+  "CMakeFiles/aoc10.dir/DependInfo.cmake"
   "CMakeFiles/aoc3_2.dir/DependInfo.cmake"
   "CMakeFiles/aoc6.dir/DependInfo.cmake"
   "CMakeFiles/aoc2.dir/DependInfo.cmake"

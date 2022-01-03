@@ -103,6 +103,36 @@ build bin/aoc7: CXX_EXECUTABLE_LINKER__aoc7 CMakeFiles/aoc7.dir/AOC7.cpp.o
   TARGET_PDB = aoc7.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target aoc10
+
+
+#############################################
+# Order-only phony target for aoc10
+
+build cmake_object_order_depends_target_aoc10: phony || CMakeFiles/aoc10.dir
+
+build CMakeFiles/aoc10.dir/AOC10.c.o: C_COMPILER__aoc10 ../AOC10.c || cmake_object_order_depends_target_aoc10
+  DEP_FILE = CMakeFiles/aoc10.dir/AOC10.c.o.d
+  FLAGS = -Wall -O0 -lgmpxx -lgmp -fopenmp
+  OBJECT_DIR = CMakeFiles/aoc10.dir
+  OBJECT_FILE_DIR = CMakeFiles/aoc10.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target aoc10
+
+
+#############################################
+# Link the executable bin/aoc10
+
+build bin/aoc10: C_EXECUTABLE_LINKER__aoc10 CMakeFiles/aoc10.dir/AOC10.c.o
+  OBJECT_DIR = CMakeFiles/aoc10.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bin/aoc10
+  TARGET_PDB = aoc10.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target aoc3_2
 
 
@@ -370,6 +400,8 @@ build aoc: phony bin/aoc
 
 build aoc1: phony bin/aoc1
 
+build aoc10: phony bin/aoc10
+
 build aoc2: phony bin/aoc2
 
 build aoc3: phony bin/aoc3
@@ -394,7 +426,7 @@ build binmat: phony libbinmat.a
 #############################################
 # Folder: /home/fred/Development/javachaos-aoc2021/build
 
-build all: phony bin/aoc8 bin/aoc7 bin/aoc3_2 bin/aoc6 bin/aoc2 bin/aoc3 bin/aoc1 bin/aoc5 bin/aoc libbinmat.a
+build all: phony bin/aoc8 bin/aoc7 bin/aoc10 bin/aoc3_2 bin/aoc6 bin/aoc2 bin/aoc3 bin/aoc1 bin/aoc5 bin/aoc libbinmat.a
 
 # =============================================================================
 # Built-in targets

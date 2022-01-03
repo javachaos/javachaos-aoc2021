@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = /home/fred/Development/javachaos-aoc2021
 # The main recursive "all" target.
 all: CMakeFiles/aoc8.dir/all
 all: CMakeFiles/aoc7.dir/all
+all: CMakeFiles/aoc10.dir/all
 all: CMakeFiles/aoc3_2.dir/all
 all: CMakeFiles/aoc6.dir/all
 all: CMakeFiles/aoc2.dir/all
@@ -74,6 +75,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/aoc8.dir/clean
 clean: CMakeFiles/aoc7.dir/clean
+clean: CMakeFiles/aoc10.dir/clean
 clean: CMakeFiles/aoc3_2.dir/clean
 clean: CMakeFiles/aoc6.dir/clean
 clean: CMakeFiles/aoc2.dir/clean
@@ -92,7 +94,7 @@ clean: CMakeFiles/binmat.dir/clean
 CMakeFiles/aoc8.dir/all:
 	$(MAKE) -f CMakeFiles/aoc8.dir/build.make CMakeFiles/aoc8.dir/depend
 	$(MAKE) -f CMakeFiles/aoc8.dir/build.make CMakeFiles/aoc8.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=17,18 "Built target aoc8"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=19,20 "Built target aoc8"
 .PHONY : CMakeFiles/aoc8.dir/all
 
 # Build rule for subdir invocation for target.
@@ -119,7 +121,7 @@ CMakeFiles/aoc8.dir/clean:
 CMakeFiles/aoc7.dir/all:
 	$(MAKE) -f CMakeFiles/aoc7.dir/build.make CMakeFiles/aoc7.dir/depend
 	$(MAKE) -f CMakeFiles/aoc7.dir/build.make CMakeFiles/aoc7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=15,16 "Built target aoc7"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=17,18 "Built target aoc7"
 .PHONY : CMakeFiles/aoc7.dir/all
 
 # Build rule for subdir invocation for target.
@@ -140,13 +142,40 @@ CMakeFiles/aoc7.dir/clean:
 .PHONY : CMakeFiles/aoc7.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/aoc10.dir
+
+# All Build rule for target.
+CMakeFiles/aoc10.dir/all:
+	$(MAKE) -f CMakeFiles/aoc10.dir/build.make CMakeFiles/aoc10.dir/depend
+	$(MAKE) -f CMakeFiles/aoc10.dir/build.make CMakeFiles/aoc10.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=5,6 "Built target aoc10"
+.PHONY : CMakeFiles/aoc10.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/aoc10.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fred/Development/javachaos-aoc2021/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/aoc10.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fred/Development/javachaos-aoc2021/CMakeFiles 0
+.PHONY : CMakeFiles/aoc10.dir/rule
+
+# Convenience name for target.
+aoc10: CMakeFiles/aoc10.dir/rule
+
+.PHONY : aoc10
+
+# clean rule for target.
+CMakeFiles/aoc10.dir/clean:
+	$(MAKE) -f CMakeFiles/aoc10.dir/build.make CMakeFiles/aoc10.dir/clean
+.PHONY : CMakeFiles/aoc10.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/aoc3_2.dir
 
 # All Build rule for target.
 CMakeFiles/aoc3_2.dir/all:
 	$(MAKE) -f CMakeFiles/aoc3_2.dir/build.make CMakeFiles/aoc3_2.dir/depend
 	$(MAKE) -f CMakeFiles/aoc3_2.dir/build.make CMakeFiles/aoc3_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=9,10 "Built target aoc3_2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=11,12 "Built target aoc3_2"
 .PHONY : CMakeFiles/aoc3_2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -173,7 +202,7 @@ CMakeFiles/aoc3_2.dir/clean:
 CMakeFiles/aoc6.dir/all: CMakeFiles/binmat.dir/all
 	$(MAKE) -f CMakeFiles/aoc6.dir/build.make CMakeFiles/aoc6.dir/depend
 	$(MAKE) -f CMakeFiles/aoc6.dir/build.make CMakeFiles/aoc6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=13,14 "Built target aoc6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=15,16 "Built target aoc6"
 .PHONY : CMakeFiles/aoc6.dir/all
 
 # Build rule for subdir invocation for target.
@@ -200,7 +229,7 @@ CMakeFiles/aoc6.dir/clean:
 CMakeFiles/aoc2.dir/all:
 	$(MAKE) -f CMakeFiles/aoc2.dir/build.make CMakeFiles/aoc2.dir/depend
 	$(MAKE) -f CMakeFiles/aoc2.dir/build.make CMakeFiles/aoc2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=5,6 "Built target aoc2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=7,8 "Built target aoc2"
 .PHONY : CMakeFiles/aoc2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -227,7 +256,7 @@ CMakeFiles/aoc2.dir/clean:
 CMakeFiles/aoc3.dir/all:
 	$(MAKE) -f CMakeFiles/aoc3.dir/build.make CMakeFiles/aoc3.dir/depend
 	$(MAKE) -f CMakeFiles/aoc3.dir/build.make CMakeFiles/aoc3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=7,8 "Built target aoc3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=9,10 "Built target aoc3"
 .PHONY : CMakeFiles/aoc3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -281,7 +310,7 @@ CMakeFiles/aoc1.dir/clean:
 CMakeFiles/aoc5.dir/all:
 	$(MAKE) -f CMakeFiles/aoc5.dir/build.make CMakeFiles/aoc5.dir/depend
 	$(MAKE) -f CMakeFiles/aoc5.dir/build.make CMakeFiles/aoc5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=11,12 "Built target aoc5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=13,14 "Built target aoc5"
 .PHONY : CMakeFiles/aoc5.dir/all
 
 # Build rule for subdir invocation for target.
@@ -335,7 +364,7 @@ CMakeFiles/aoc.dir/clean:
 CMakeFiles/binmat.dir/all:
 	$(MAKE) -f CMakeFiles/binmat.dir/build.make CMakeFiles/binmat.dir/depend
 	$(MAKE) -f CMakeFiles/binmat.dir/build.make CMakeFiles/binmat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=19,20 "Built target binmat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fred/Development/javachaos-aoc2021/CMakeFiles --progress-num=21,22 "Built target binmat"
 .PHONY : CMakeFiles/binmat.dir/all
 
 # Build rule for subdir invocation for target.
